@@ -36,6 +36,20 @@ function displayWord() {
  }
 }
 
+// Update worng letter 
+function updateWrongLettersEl() {
+  console.log('update worng');
+}
+
+// Show notification
+function showNotification() {
+  notification.classList.add('show');
+
+  setTimeout(() => {
+    notification.classList.remove('show')
+  }, 2000)
+}
+
 // Keydown letter press
 window.addEventListener('keydown', e => {
   // console.log(e.keyCode);
